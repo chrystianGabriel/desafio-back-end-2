@@ -60,7 +60,6 @@ namespace PlaylistRecommender.Api
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Playlist Recommender V1"); 
             });
-            
             app.UseHttpsRedirection();
 
             app.UseRouting();
