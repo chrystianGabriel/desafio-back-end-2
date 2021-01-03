@@ -1,0 +1,26 @@
+{
+    "providers": [
+        {
+            "provider_key": "WeatherMaps",
+            "api_key": "555f624730966f0d0c0d422b0f79fa78",
+            "urls": {
+                "base_url": "http://api.openweathermap.org/data/2.5/"
+            },
+            "routes": { 
+                "route_get_weather": "weather" 
+            }
+        },
+        {
+            "provider_key": "Playlist",
+            "api_key": "f424651d10494afb869969973106f90c:0be5f126f10d4a5a8255aa6c8c540a94",
+            "urls": {
+                "base_url": "https://api.spotify.com/v1",
+                "authorization": "https://accounts.spotify.com/api"
+            },
+            "routes": { 
+                "route_authorization": "token",
+                "route_recommendation": "recommendations" 
+            }
+        }
+    ]
+}
