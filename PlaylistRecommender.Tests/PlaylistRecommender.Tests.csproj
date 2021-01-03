@@ -17,4 +17,7 @@
     <ProjectReference Include="..\PlaylistRecommender.Domain\PlaylistRecommender.Domain.csproj" />
   </ItemGroup>
 
+  <Target Name="CopyCustomContentOnPublish" AfterTargets="AfterBuild">
+    <Copy SourceFiles="../providerssettings.json" DestinationFolder="$(OutDir)" />
+  </Target>
 </Project>
